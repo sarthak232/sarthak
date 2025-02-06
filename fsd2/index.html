@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic DOM Manipulation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      margin-top: 50px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    #imageContainer {
+      max-width: 200px;
+    }
+
+    .dynamic-text {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #e0f7fa;
+      color: #00796b;
+      border-radius: 5px;
+    }
+
+    #background-section {
+      padding: 40px;
+      border-radius: 10px;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Dynamic Web Page with DOM and jQuery Manipulation</h1>
+
+    <!-- Form Section -->
+    <div class="mt-4">
+      <h3>Form Input</h3>
+      <form id="userForm">
+        <div class="mb-3">
+          <label for="userName" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+        </div>
+        <button type="button" id="submitButton" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="formOutput" class="dynamic-text"></div>
+    </div>
+
+    <!-- Change CSS and Image Source Section -->
+    <div class="mt-4">
+      <h3>Change Image and Text</h3>
+      <div id="imageContainer">
+        <img src="https://via.placeholder.com/200" id="image" alt="Placeholder Image" class="img-fluid">
+      </div>
+      <button id="changeImage" class="btn btn-success mt-2">Change Image</button>
+    </div>
+
+    <!-- Add and Delete Node -->
+    <div class="mt-4">
+      <h3>Node Manipulation</h3>
+      <ul id="itemList" class="list-group">
+        <li class="list-group-item">Item 1</li>
+        <li class="list-group-item">Item 2</li>
+      </ul>
+      <button id="addNode" class="btn btn-info mt-2">Add Node</button>
+      <button id="deleteNode" class="btn btn-danger mt-2">Delete Node</button>
+    </div>
+
+    <!-- jQuery Section -->
+    <div id="background-section" class="mt-4 bg-primary text-center">
+      <h3>jQuery Manipulation Section</h3>
+      <button id="changeButtonText" class="btn btn-warning mt-2">Change Button Text</button>
+      <button id="setBackground" class="btn btn-dark mt-2">Set Background Image</button>
+    </div>
+  </div>
+
+  <!-- jQuery and Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
